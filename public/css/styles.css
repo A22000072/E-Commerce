@@ -1,0 +1,710 @@
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    padding-top: 56px;
+}
+
+.navbar, .footer {
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+.navbar a, .footer a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.product-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.btn-primary {
+    background-color: #000;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+}
+/* Footer styling */
+footer {
+    background-color: #ffffff; /* Black background */
+    color: #fff; /* White text color */
+    padding: 20px 0;
+    border-top: 1px solid #333; /* Subtle border */
+}
+
+/* Social media icons */
+footer .fa-stack {
+    margin: 0 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+footer .fa-stack-2x {
+    color: #333; /* Gray circle background */
+}
+
+footer .fa-stack-1x {
+    color: #fff; /* White icon */
+}
+
+footer .fa-stack:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    color: #ccc; /* Change icon color to light gray */
+}
+
+/* Footer text */
+footer .small {
+    font-size: 0.9rem;
+    color: #ccc; /* Light gray text */
+}
+
+footer .small a {
+    color: #fff; /* White links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .small a:hover {
+    color: #ccc; /* Light gray on hover */
+}
+
+/* General styling for the product catalog */
+body {
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark text */
+    padding-top: 56px;
+}
+
+h1 {
+    color: #000; /* Black header */
+}
+
+/* Product Card Styling */
+.card.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Menjaga keseimbangan ruang */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Image Styling */
+.card.product-card .card-img-top {
+    width: 100%;
+    max-height: 200px; /* Proporsi yang pas */
+    object-fit: cover;
+    background-color: #f8f8f8;
+}
+
+/* Product Text */
+.card.product-card .card-body {
+    text-align: center;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Memberikan jarak antar elemen */
+}
+
+.card.product-card .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.card.product-card .price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #e67e22; /* Warna yang menarik perhatian */
+    margin-bottom: 10px;
+}
+
+.card.product-card .card-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.card.product-card .btn {
+    margin-top: auto; /* Mendorong tombol ke bawah */
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card.product-card .btn:hover {
+    background-color: #555;
+    transform: scale(1.05); /* Sedikit membesar untuk efek hover */
+}
+
+/* Product Details Page */
+.product-image img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.product-price {
+    color: #000;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-description {
+    color: #555;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.product-stock .badge {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.btn-primary {
+    background-color: #000;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+}
+
+/* Additional Information Section */
+h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+/* Dropdown hover styling */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Tampilkan dropdown menu */
+    margin-top: 0; /* Hilangkan jarak dropdown dari tombol */
+}
+
+.nav-item.dropdown .dropdown-menu {
+    display: none; /* Sembunyikan dropdown menu secara default */
+    transition: all 0.3s ease; /* Tambahkan transisi untuk animasi */
+}
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    padding-top: 56px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Masthead Section */
+header.masthead {
+    height: 70vh;
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("{{ asset('images/product1.jpg') }}"); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Gambar akan tetap diam */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+header.masthead h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    
+}
+
+header.masthead p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: #fff;
+}
+
+header.masthead .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+header.masthead .btn:hover {
+    background-color: #555;
+}
+
+/* Categories Section */
+/* Categories Section */
+.categories {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.categories h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.categories .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.category-card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.category-card img {
+    width: 100%; /* Pastikan gambar memenuhi lebar card */
+    height: 150px; /* Batasi tinggi gambar untuk konsistensi */
+    object-fit: cover; /* Menjaga proporsi gambar tanpa merusak tata letak */
+    border-radius: 10px;
+}
+
+.category-card h3 {
+    margin: 1rem 0;
+}
+
+.category-card .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.category-card .btn:hover {
+    background-color: #555;
+}
+
+/* Featured Products Section */
+.home-featured-products {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.home-featured-products h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+    font-weight: 700;
+}
+
+.home-featured-products .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.home-product-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.home-product-card img {
+    width: 50%; /* Gambar memenuhi lebar card */
+    height: 250px; /* Tinggi gambar dibatasi */
+    object-fit: contain; /* Menjaga agar gambar tetap proporsional */
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+.home-product-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0.5rem 0;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.home-product-card .price {
+    color: #666;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.home-product-card .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 0.6rem 1.5rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.home-product-card .btn:hover {
+    background-color: #555;
+}
+
+/* Cart Container */
+.cart-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.cart-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: #000;
+}
+
+/* Cart List */
+.cart-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.cart-item:hover {
+    background-color: #eaeaea;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+    background-color: #ccc;
+}
+
+.cart-item-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cart-item-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+.cart-item-price,
+.cart-item-quantity {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0.2rem 0;
+}
+
+.cart-item-total {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.cart-item-remove {
+    background: none;
+    border: 1px solid #000;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.cart-item-remove:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Cart Footer */
+.cart-footer {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.cart-footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.checkout-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background-color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Container */
+.profile-container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Profile Header */
+.profile-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.profile-header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.profile-header h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+
+.profile-header p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Profile Info Section */
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.profile-info .info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.profile-info .info-item:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info .info-item label {
+    font-weight: bold;
+    color: #000;
+    font-size: 1rem;
+}
+
+.profile-info .info-item span {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* Edit Button */
+.profile-footer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.edit-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edit-btn:hover {
+    background-color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000; /* Warna hitam untuk sidebar */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    overflow-y: auto;
+}
+
+.sidebar.hidden {
+    transform: translateX(-100%);
+}
+
+/* Sidebar Header */
+.sidebar-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.sidebar-header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+}
+
+.sidebar-header p {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-top: 0.5rem;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+    flex-grow: 1;
+}
+
+.sidebar-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 1rem;
+}
+
+.sidebar-menu li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar-menu li a:hover {
+    background-color: #333;
+    color: #ccc;
+}
+
+/* Sidebar Footer */
+.sidebar-footer {
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid #333;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+.sidebar-footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar-footer a:hover {
+    color: #ccc;
+    text-decoration: underline;
+}
