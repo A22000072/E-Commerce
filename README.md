@@ -147,13 +147,5 @@ Desain menggunakan kombinasi:
 
 ---
 
-## 📞 Kontak
-Jika ada pertanyaan atau saran, silakan hubungi:
-- **Nama**: Muhammad Akbar Fauzi
-- **Email**: example@example.com
-- **GitHub**: [GitHub Profile](https://github.com/username)
-
----
-
 ## 📄 Lisensi
 Proyek ini dilisensikan di bawah [MIT License](LICENSE).
