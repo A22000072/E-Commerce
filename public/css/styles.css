@@ -13,6 +13,23 @@ body {
     color: #000000;
     text-decoration: none;
 }
+.navbar.navbar-brand {
+    display: flex;
+    align-items: center; /* Logo sejajar secara vertikal */
+    padding: 0.5rem 1rem; /* Spasi di sekitar elemen */
+}
+
+.navbar-brand .logo {
+    max-width: 120px; /* Sesuaikan ukuran maksimum logo */
+    max-height: 70px; /* Sesuaikan tinggi maksimum logo */
+    object-fit: contain; /* Jaga aspek rasio logo */
+    display: inline-block;
+    transition: transform 0.3s ease; /* Tambahkan animasi saat hover */
+}
+
+.navbar-brand:hover .logo {
+    transform: scale(1.1); /* Perbesar logo sedikit saat hover */
+}
 
 .product-card {
     border: none;
@@ -617,94 +634,145 @@ header.masthead .btn:hover {
     background-color: #333;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-/* Sidebar Styling */
+/* Sidebar Container */
+.sidebar-header .logo {
+    max-width: 100%; /* Sesuaikan ukuran logo */
+    max-height: 80px;
+    margin: 0 auto; /* Agar logo berada di tengah */
+    background-color: #ffffff; 
+    border: none;
+}
 .sidebar {
     width: 250px;
     height: 100vh;
+    background-color: #ffffff; /* Dark background */
+    color: #ffffff; /* Text color */
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #000; /* Warna hitam untuk sidebar */
-    color: #fff;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 1.5rem 1rem;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    overflow-y: auto;
-}
-
-.sidebar.hidden {
-    transform: translateX(-100%);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Sidebar Header */
 .sidebar-header {
-    margin-bottom: 2rem;
+    /* padding: 1.5rem; */
     text-align: center;
+    background-color: #ffffff; /* Slightly lighter for distinction */
+    border-bottom: 1px solid #333;
+    border: none;
 }
 
-.sidebar-header h2 {
+.sidebar-title {
     font-size: 1.5rem;
     font-weight: bold;
-    margin: 0;
-    color: #fff;
+    color: #ffffff;
+    letter-spacing: 1px;
 }
 
-.sidebar-header p {
-    font-size: 0.9rem;
-    color: #ccc;
-    margin-top: 0.5rem;
-}
-
-/* Sidebar Menu */
-.sidebar-menu {
-    flex-grow: 1;
-}
-
-.sidebar-menu ul {
+/* Sidebar Navigation */
+.sidebar ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    flex-grow: 1;
 }
 
-.sidebar-menu li {
-    margin-bottom: 1rem;
+.sidebar ul li {
+    margin: 0.5rem 0;
 }
 
-.sidebar-menu li a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
     font-size: 1rem;
     font-weight: 500;
-    padding: 0.8rem 1rem;
-    border-radius: 10px;
+    color: #000000; /* Muted text */
+    text-decoration: none;
+    border-radius: 8px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.sidebar-menu li a:hover {
-    background-color: #333;
-    color: #ccc;
+.sidebar ul li a i {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    color: #000000; /* Muted icon */
+    transition: color 0.3s ease;
 }
 
-/* Sidebar Footer */
-.sidebar-footer {
-    text-align: center;
-    padding: 1rem;
-    border-top: 1px solid #333;
-    color: #ccc;
-    font-size: 0.9rem;
+.sidebar ul li a span {
+    flex-grow: 1;
 }
 
-.sidebar-footer a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+.sidebar ul li a:hover {
+    background-color: #000000;
+    color: #ffffff;
 }
 
-.sidebar-footer a:hover {
-    color: #ccc;
-    text-decoration: underline;
+.sidebar ul li a:hover i {
+    color: #ffffff;
+}
+
+/* Active Link */
+.sidebar ul li a.active {
+    background-color: #007bff; /* Highlight color */
+    color: #ffffff;
+}
+
+.sidebar ul li a.active i {
+    color: #ffffff;
+}
+
+/* Logout Button */
+.sidebar ul li a.logout {
+    color: #000000; /* Highlight logout in red */
+}
+
+.sidebar ul li a.logout:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        flex-direction: row;
+        align-items: center;
+        padding: 0.5rem 0;
+        background-color: #1c1c1c;
+    }
+
+    .sidebar-header {
+        display: none;
+    }
+
+    .sidebar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .sidebar ul li {
+        margin: 0;
+    }
+
+    .sidebar ul li a {
+        padding: 0.5rem;
+        flex-direction: column;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .sidebar ul li a i {
+        margin: 0 0 5px 0;
+    }
 }
