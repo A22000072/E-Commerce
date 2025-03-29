@@ -1,3 +1,4 @@
+
 # Laravel E-Commerce Project
 
 Proyek ini adalah aplikasi e-commerce berbasis Laravel yang menampilkan berbagai fitur seperti sidebar navigasi, halaman profil, keranjang belanja, dan tata letak responsif dengan desain minimalis hitam putih.
@@ -6,6 +7,7 @@ Proyek ini adalah aplikasi e-commerce berbasis Laravel yang menampilkan berbagai
 - **Sidebar Navigasi**: Sidebar yang mudah digunakan untuk navigasi ke berbagai halaman.
 - **Halaman Profil**: Menampilkan informasi pengguna dengan desain modern.
 - **Keranjang Belanja (Cart)**: Pengguna dapat melihat dan mengelola produk yang ditambahkan ke keranjang.
+- **Checkout**: Halaman checkout untuk menyelesaikan transaksi.
 - **Desain Responsif**: Tata letak yang dioptimalkan untuk perangkat desktop dan mobile.
 - **Integrasi Bootstrap**: Menggunakan Bootstrap 5 untuk elemen UI yang responsif dan elegan.
 
@@ -64,6 +66,7 @@ Berikut adalah struktur file utama:
 ├── app/Http/Controllers
 │   ├── ProfileController.php
 │   ├── CartController.php
+│   ├── CheckoutController.php
 │   └── ...
 ├── resources/views
 │   ├── layouts/app.blade.php
@@ -73,6 +76,7 @@ Berikut adalah struktur file utama:
 │   │   ├── sidebar.blade.php
 │   ├── profile.blade.php
 │   ├── cart.blade.php
+│   ├── checkout.blade.php
 │   └── ...
 ├── public/css
 │   ├── app.css
@@ -90,6 +94,7 @@ Berikut adalah struktur file utama:
   - **Home**
   - **Profile**
   - **Cart**
+  - **Checkout**
   - **Products**
   - **Settings**
   - **Logout**
@@ -103,6 +108,11 @@ Berikut adalah struktur file utama:
 - File: `resources/views/cart.blade.php`
 - Menampilkan daftar produk yang telah ditambahkan ke keranjang.
 - Menghitung total harga.
+
+### 4. **Halaman Checkout**
+- File: `resources/views/checkout.blade.php`
+- Menampilkan ringkasan produk yang akan dibeli.
+- Tombol untuk menyelesaikan pembayaran.
 
 ---
 
@@ -142,7 +152,7 @@ Desain menggunakan kombinasi:
 
 ## 🛠 TODO
 - [ ] Tambahkan autentikasi pengguna.
-- [ ] Buat halaman pembayaran.
+- [ ] Tambahkan halaman detail produk.
 - [ ] Tambahkan fitur pencarian produk.
 
 ---
