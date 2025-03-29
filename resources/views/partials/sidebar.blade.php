@@ -18,7 +18,7 @@
 </div> --}}
 <div class="sidebar">
     <div class="sidebar-header text-center">
-        <a href="{{ url('/home') }}">
+        <a class="navbar-brand" href="{{ url('/home') }}">
             <img src="{{ asset('images/logo.png') }}" alt="E-commerce Logo" class="logo">
         </a>
     </div>    

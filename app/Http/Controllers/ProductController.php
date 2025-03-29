@@ -2,26 +2,25 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
     public function index()
     {
-        // Ambil data produk dari database (contoh menggunakan model Product)
-        // $products = Product::all();
+        // Ambil semua produk dari database
+        $products = Product::all();
 
-        return view('pages.product', [
-            // 'products' => $products
-        ]);
+        // Kirim data ke view
+        return view('pages.product', compact('products'));
     }
-    public function detail()
+    public function show($slug)
     {
-        // Ambil data produk dari database (contoh menggunakan model Product)
-        // $products = Product::all();
+        // Ambil produk berdasarkan slug
+        $product = Product::where('slug', $slug)->firstOrFail();
 
-        return view('pages.product_detail', [
-            // 'products' => $products
-        ]);
+        // Lempar data produk ke view
+        return view('pages.product_detail', compact('product'));
     }
 }
