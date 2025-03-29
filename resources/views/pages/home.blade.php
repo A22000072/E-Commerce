@@ -7,7 +7,7 @@
     <div class="container h-100">
         <div class="row h-100 align-items-center">
             <div class="col-12 text-center">
-                <h1 class="display-4">Welcome to E-Commerce</h1>
+                <h1 class="display-4">Welcome to Lora</h1>
                 <p class="lead">Discover the best deals on quality products tailored just for you.</p>
                 <a href="{{ url('/product') }}" class="btn btn-primary btn-lg">Shop Now</a>
             </div>
