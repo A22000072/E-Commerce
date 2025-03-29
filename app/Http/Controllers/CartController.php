@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Cart;
 use App\Models\CartItem;
+use Illuminate\Support\Facades\Auth;
 
 class CartController extends Controller
 {
@@ -29,6 +30,9 @@ class CartController extends Controller
     }
     public function index()
     {
+        if (!Auth::check()) {
+            return redirect()->route('login')->with('error', 'Anda harus login terlebih dahulu untuk mengakses keranjang.');
+        }
         $cart = auth()->user()->cart;
         $cartItems = $cart ? $cart->cartItems()->with('product')->get() : [];
         $totalPrice = $cartItems->sum(fn ($item) => $item->product->price * $item->quantity);
