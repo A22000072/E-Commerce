@@ -23,4 +23,5 @@ class ProductController extends Controller
         // Lempar data produk ke view
         return view('pages.product_detail', compact('product'));
     }
+    
 }

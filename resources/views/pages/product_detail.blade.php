@@ -20,9 +20,13 @@
                 <p class="product-description text-muted mb-4">
                     {{ $product->description }}
                 </p>
-                <a href="#" class="btn btn-dark btn-lg px-4">
-                    <i class="fas fa-shopping-cart me-2"></i>Add to Cart
-                </a>
+                <!-- Add to Cart Form -->
+                <form action="{{ route('cart.store') }}" method="POST" class="mt-3">
+                    @csrf
+                    <input type="hidden" name="product_id" value="{{ $product->id }}">
+                    <input type="hidden" name="quantity" value="1">
+                    <button type="submit" class="btn btn-primary">Add to Cart</button>
+                </form>
             </div>
         </div>
     </div>

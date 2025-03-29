@@ -1,6 +1,6 @@
 @extends('layouts.app_user')
 
-@section('title', 'Home')
+@section('title', 'Profile')
 
 @section('content')
 <div class="profile-container">
@@ -8,7 +8,7 @@
     <div class="profile-header">
         <img src="{{ asset('images/product1.jpg') }}" alt="Profile Picture">
         <h2>{{ Auth::user()->name }}</h2>
-        {{-- <p>Videographer | Creative Media Specialist</p> --}}
+        <p>Videographer | Creative Media Specialist</p>
     </div>
 
     <!-- Info Section -->
@@ -16,6 +16,7 @@
         <form action="{{ route('profile.update') }}" method="POST">
             @csrf
             @method('PUT')
+
             <div class="info-item">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" value="{{ Auth::user()->name }}" required>
